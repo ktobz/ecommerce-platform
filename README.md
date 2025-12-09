@@ -111,3 +111,8 @@ kubectl apply -f infrastructure/k8s/
 - PostgreSQL
 - Docker
 - Netlify
+
+## Deployment Status
+
+✅ **GitHub Repository**: [https://github.com/ktobz/ecommerce-platform](https://github.com/ktobz/ecommerce-platform)  
+🚀 **Netlify**: Configured and ready to deploy
