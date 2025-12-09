@@ -1,0 +1,16 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  primary:
+    <<: *default
+    database: shopify_clone_primary_dev
+  shards:
+    shard_one:
+      <<: *default
+      database: shopify_clone_shard_one_dev
+    shard_two:
+      <<: *default
+      database: shopify_clone_shard_two_dev

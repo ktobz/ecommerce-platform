@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: sharding-config
+data:
+  shards.yml: |
+    shards:
+      - id: 1
+        name: shard_one
+        host: db-shard-1
+      - id: 2
+        name: shard_two
+        host: db-shard-2
